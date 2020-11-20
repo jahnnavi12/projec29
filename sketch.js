@@ -36,8 +36,6 @@ createCanvas(800,400);
     g = new Hexagon(polygon.body,{x:200, y:200});
     ground = new Ground(500,390,1000,15); 
 
-
-
 }
 
 function draw(){
@@ -67,8 +65,6 @@ function draw(){
 function mouseDragged(){
     Matter.Body.setPosition(polygon.body, {x: mouseX , y: mouseY});
 }
-
-
 function mouseReleased() {
   g.fly(); 
 }  
